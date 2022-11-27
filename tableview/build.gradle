@@ -29,10 +29,11 @@ android {
     buildFeatures {
         buildConfig = false
     }
-
-    lintOptions {
+    lint {
         abortOnError false
     }
+    namespace 'com.evrencoskun.tableview'
+
 
     tasks.withType(Javadoc) {
         options.addStringOption('Xdoclint:none', '-quiet')
